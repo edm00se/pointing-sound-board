@@ -1,0 +1,44 @@
+[
+  {
+    "text": "Consensus",
+    "path": "consensus.m4a",
+    "mime": "audio/mp4",
+    "color": null
+  },
+  {
+    "text": "Discuss",
+    "path": "talkAmongstYourselves.m4a",
+    "mime": "audio/mp4",
+    "color": null
+  },
+  {
+    "text": "Sell Me",
+    "path": "sell.m4a",
+    "mime": "audio/mp4",
+    "color": null
+  },
+  {
+    "text": "Explain Yourself",
+    "path": "explainYourself.m4a",
+    "mime": "audio/mp4",
+    "color": null
+  },
+  {
+    "text": "Do You Concur?",
+    "path": "doYouConcur.m4a",
+    "mime": "audio/mp4",
+    "color": null
+  },
+  {
+    "text": "I Object!",
+    "path": "iObject.m4a",
+    "mime": "audio/mp4",
+    "color": null
+  },
+  {
+    "text": "I Strenuously Object",
+    "path": "strenuouslyObject.m4a",
+    "mime": "audio/mp4",
+    "color": null
+  }
+]
