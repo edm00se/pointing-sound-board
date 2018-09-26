@@ -2,7 +2,7 @@ import Vue from 'vue';
 import HelloWorld from './HelloWorld';
 
 describe('Message', () => {
-  let cmp;
+  let CMP;
   let vm;
 
   beforeEach(() => {

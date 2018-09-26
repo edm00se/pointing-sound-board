@@ -5,13 +5,13 @@
   "main": "src/main.js",
   "private": true,
   "scripts": {
+    "build": "node build/build.js",
     "dev": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
     "start": "npm run dev",
-    "test": "jest --coverage",
-    "test:watch": "jest --coverage --watch",
     "lint": "eslint --ext .js,.vue src",
     "format": "prettier --write \"src/**/*.{vue,js}\"",
-    "build": "node build/build.js"
+    "test": "jest --coverage",
+    "test:watch": "jest --coverage --watch"
   },
   "dependencies": {
     "howler": "2.0.15",

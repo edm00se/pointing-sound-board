@@ -9,15 +9,15 @@ export const colorAr = [
   '#0A2463'
 ];
 
-let selectedColors = [];
+const selectedColors = [];
 
 function getRandomSelection(ar) {
   return ar[Math.floor(Math.random() * ar.length)];
 }
 
 export function randomColor() {
-  let unUsedAr = colorAr.filter(c => !selectedColors.includes(c));
-  let rnd = getRandomSelection(unUsedAr);
+  const unUsedAr = colorAr.filter(c => !selectedColors.includes(c));
+  const rnd = getRandomSelection(unUsedAr);
 
   selectedColors.push(rnd);
 

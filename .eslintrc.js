@@ -47,6 +47,12 @@ module.exports = {
     }],
     // allow debugger during development
     'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off',
-    'comma-dangle': ['error', 'never']
+    'comma-dangle': ['error', 'never'],
+    'arrow-parens': ['error', 'as-needed', {
+      requireForBlockBody: false,
+    }],
+    'no-plusplus': ['error',{
+      'allowForLoopAfterthoughts': true
+    }]
   }
 }

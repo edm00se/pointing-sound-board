@@ -18,7 +18,7 @@ export default {
     Sound
   },
   data() {
-    let updatedSoundAr = SoundAr.map(snd => {
+    const updatedSoundAr = SoundAr.map(snd => {
       const nwSnd = snd;
       if (nwSnd.color == null) {
         nwSnd.color = randomColor();

@@ -42,11 +42,10 @@ export default {
     updateHoverState(isHover) {
       this.hoverState = isHover;
     },
-    playAudio(pth) {
+    playAudio() {
       const sound = new Howl({
         src: [`static/clips/${this.sound.path}`]
       });
-      console.log(sound);
       sound.play();
     }
   },
