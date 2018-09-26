@@ -6,12 +6,15 @@
   "private": true,
   "scripts": {
     "build": "node build/build.js",
+    "build:gh-files": "cpy '.nojekyll' dist",
     "dev": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
     "start": "npm run dev",
     "lint": "eslint --ext .js,.vue src",
     "format": "prettier --write \"src/**/*.{vue,js}\"",
     "test": "jest --coverage",
-    "test:watch": "jest --coverage --watch"
+    "test:watch": "jest --coverage --watch",
+    "deploy": "npm run build && npm run build:gh-files && gh-pages -d dist -b master -t",
+    "deploy:travis": "npm run build && npm run build:gh-files && gh-pages --repo https://$GH_TOKEN@github.com/edm00se/pointing-sound-board.git -d dist -t"
   },
   "dependencies": {
     "howler": "2.0.15",
@@ -33,6 +36,7 @@
     "babel-preset-stage-2": "^6.22.0",
     "chalk": "^2.0.1",
     "copy-webpack-plugin": "^4.0.1",
+    "cpy-cli": "^2.0.0",
     "css-loader": "^0.28.0",
     "eslint": "^4.15.0",
     "eslint-config-airbnb-base": "^11.3.0",
@@ -44,6 +48,7 @@
     "extract-text-webpack-plugin": "^3.0.0",
     "file-loader": "^1.1.4",
     "friendly-errors-webpack-plugin": "^1.6.1",
+    "gh-pages": "^2.0.0",
     "html-webpack-plugin": "^2.30.1",
     "jest": "^22.0.4",
     "jest-serializer-vue": "^0.3.0",
