@@ -44,7 +44,7 @@ export default {
     },
     playAudio(pth) {
       const sound = new Howl({
-        src: [`/clips/${this.sound.path}`]
+        src: [`static/clips/${this.sound.path}`]
       });
       console.log(sound);
       sound.play();
