@@ -1,5 +1,6 @@
 <template>
   <div class="sound"
+    v-bind:class="{ active: isActive }"
     v-bind:style="{ backgroundColor: color, color: textColor }"
     v-on:click="playAudio()"
     @mouseenter="updateHoverState(true)"
@@ -24,13 +25,13 @@ export default {
       return this.sound.mime;
     },
     color() {
-      if (this.hoverState) {
-        return 'white';
-      }
       return this.sound.color;
     },
     textColor() {
-      return this.hoverState ? 'black' : 'white';
+      return 'white';
+    },
+    isActive() {
+      return this.hoverState;
     }
   },
   data() {
@@ -66,8 +67,11 @@ export default {
   font-size: 1.25em;
   cursor: pointer;
   @media (max-width: 400px) {
-    width: 100%;
+    width: 45%;
     margin-bottom: 10px;
   }
+}
+.active {
+  filter: brightness(175%);
 }
 </style>

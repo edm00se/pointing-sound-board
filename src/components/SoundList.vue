@@ -38,9 +38,4 @@ export default {
   flex-wrap: wrap;
   justify-content: center;
 }
-@media (max-width: 400px) {
-  .sounds {
-    display: block;
-  }
-}
 </style>
