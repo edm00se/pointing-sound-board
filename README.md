@@ -1,7 +1,7 @@
 # pointing-sound-board
 [![Build Status](https://travis-ci.org/edm00se/pointing-sound-board.svg?branch=master)](https://travis-ci.org/edm00se/pointing-sound-board)
 
-> a vue.js sound board for pointing poker
+A sound board for pointing poker humor, written in [vue.js](https://vuejs.org/).
 
 ## Build Setup
 
