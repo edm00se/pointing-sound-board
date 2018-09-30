@@ -18,12 +18,6 @@ export default {
     text() {
       return this.sound.text;
     },
-    path() {
-      return this.sound.path;
-    },
-    mime() {
-      return this.sound.mime;
-    },
     color() {
       return this.sound.color;
     },

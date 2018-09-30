@@ -96,7 +96,10 @@
       "^.+\\.js$": "<rootDir>/node_modules/babel-jest",
       ".*\\.(vue)$": "<rootDir>/node_modules/vue-jest"
     },
-    "testURL": "http://localhost"
+    "testURL": "http://localhost",
+    "setupFiles": [
+      "config/jest.setup.js"
+    ]
   },
   "prettier": {
     "semi": true,
