@@ -11,6 +11,7 @@
 
 <script>
 import { Howl } from 'howler';
+const isProd = process.env.NODE_ENV === 'production';
 
 export default {
   name: 'Sound',
@@ -39,7 +40,7 @@ export default {
     },
     playAudio() {
       const sound = new Howl({
-        src: [`../clips/${this.sound.path}`]
+        src: [`${isProd ? '.' : '..'}/clips/${this.sound.path}`]
       });
       sound.play();
     }
