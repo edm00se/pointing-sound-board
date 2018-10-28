@@ -5,19 +5,19 @@ import SoundList from './SoundList';
 jest.mock('../assets/sounds.json', () => {
   return [
     {
-      "text": "Consensus",
-      "path": "consensus.m4a",
-      "mime": "audio/mp4",
-      "color": null
+      text: 'Consensus',
+      path: 'consensus.m4a',
+      mime: 'audio/mp4',
+      color: null
     },
     {
-      "text": "Discuss",
-      "path": "talkAmongstYourselves.m4a",
-      "mime": "audio/mp4",
-      "color": '#3F88C5'
+      text: 'Discuss',
+      path: 'talkAmongstYourselves.m4a',
+      mime: 'audio/mp4',
+      color: '#3F88C5'
     }
   ];
-})
+});
 
 describe('SoundList', () => {
   let CMP;

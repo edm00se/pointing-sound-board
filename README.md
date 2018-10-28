@@ -1,32 +1,50 @@
-# pointing-sound-board
-[![Build Status](https://travis-ci.org/edm00se/pointing-sound-board.svg?branch=master)](https://travis-ci.org/edm00se/pointing-sound-board)
+<center>
+<h1>Pointing Sound Board</h1>
+  <a href="https://travis-ci.org/edm00se/pointing-sound-board">
+    <img alt="build status" src="https://travis-ci.org/edm00se/pointing-sound-board.svg?branch=master">
+  </a>
+</center>
 
-A sound board for pointing poker humor, written in [vue.js](https://vuejs.org/).
+> A sound board for pointing poker humor, written in [vue.js](https://vuejs.org/).
 
-## Build Setup
+Alternatively, you can just load up this starter at [its corresponding codesandbox url][codesandbox-link]:
+https://codesandbox.io/s/github/edm00se/pointing-sound-board
 
-``` bash
-# install dependencies
-npm install
+## Installation
 
-# serve with hot reload at localhost:8080
-npm run dev
+- `git clone `
+- `cd vue-parcel-starter`
+- `npm install`
 
-# build for production with minification
-npm run build
+## Usage
 
-# build for production and view the bundle analyzer report
-npm run build --report
+- `npm run dev` gives you a development server with hot reloading
+- `npm run build` creates a production ready build
+- `npm test` runs test suites
 
-# run unit tests
-npm run unit
+## History
 
-# run all tests
-npm test
-```
+Inspired from a raucous round of pointing poker which seemed to need a bit of a follow-up.
 
-For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+## Contributing
+
+1. Fork it!
+2. Create your feature branch: `git checkout -b my-new-feature`
+3. Commit your changes: `git commit -am 'Add some feature'`
+4. Push to the branch: `git push origin my-new-feature`
+5. Submit a pull request 🙂
+
+## Credits
+
+- [vue.js][vue]
+- [parcel][parcel]
+- [edm00se/vue-parcel-starter][vue-parcel-starter]
 
 # License
 
 MIT
+
+[vue]: https://vuejs.org/
+[parcel]: https://parceljs.org/
+[vue-parcel-starter]: https://github.com/edm00se/vue-parcel-starter
+[codesandbox-link]: https://codesandbox.io/s/github/edm00se/pointing-sound-board

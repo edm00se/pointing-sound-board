@@ -1,6 +1,5 @@
 import Vue from 'vue';
 import Sound from './Sound';
-import { Howl } from 'Howler';
 
 describe('Sound', () => {
   let CMP;
