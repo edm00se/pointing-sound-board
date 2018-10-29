@@ -1,0 +1,20 @@
+{
+  "name": "Pointing Sound Board",
+  "short_name": "🃏🎧",
+  "start_url": "index.html",
+  "display": "standalone",
+  "theme_color": "#d07922",
+  "background_color": "#fff",
+  "icons": [
+    {
+      "src": "assets/icons/logo_144.png",
+      "sizes": "144x144",
+      "type": "image/png"
+    },
+    {
+      "src": "assets/icons/logo_512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
