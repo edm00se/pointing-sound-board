@@ -51,6 +51,7 @@ export default {
 
 <style lang="scss">
 .sound {
+  font-weight: 600;
   min-height: 100px;
   border: 1px solid grey;
   border-radius: 0.5em;

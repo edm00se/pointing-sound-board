@@ -7,9 +7,10 @@
   "scripts": {
     "clean": "rimraf dist",
     "dev": "parcel ./src/index.html",
-    "format": "prettier --write \"src/**/*.{vue,js}\"",
-    "build": "parcel build ./src/index.html --public-url .",
-    "build:ci": "parcel build ./src/index.html --public-url . --log-level 2",
+    "format": "prettier --write \"src/**/*.{vue,js,json}\"",
+    "build": "parcel build ./src/index.html --public-url . && npm run build:sw",
+    "build:ci": "parcel build ./src/index.html --public-url . --log-level 2 && npm run build:sw",
+    "build:sw": "rimraf dist/sw.js && workbox generateSW config/workbox-config.js",
     "test": "jest --config config/tests/jest.conf.js --coverage",
     "test:watch": "jest --config config/tests/jest.conf.js --coverage --watch"
   },
@@ -36,7 +37,8 @@
     "vue-hot-reload-api": "2.3.1",
     "vue-jest": "3.0.0",
     "vue-server-renderer": "^2.5.17",
-    "vue-template-compiler": "^2.5.17"
+    "vue-template-compiler": "^2.5.17",
+    "workbox-cli": "3.6.3"
   },
   "engines": {
     "node": ">= 6.0.0",
