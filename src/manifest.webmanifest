@@ -1,7 +1,7 @@
 {
   "name": "Pointing Sound Board",
   "short_name": "🃏🎧",
-  "start_url": "index.html",
+  "start_url": "./?utm_source=web_app_manifest",
   "display": "standalone",
   "theme_color": "#d07922",
   "background_color": "#fff",
