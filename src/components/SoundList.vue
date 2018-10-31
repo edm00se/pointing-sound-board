@@ -1,6 +1,6 @@
 <template>
   <div class="sound-list">
-    <h1>Sound Board</h1>
+    <h1>Pointing Sound Board</h1>
     <div class="sounds">
       <Sound v-for="sound in soundList" :key="sound.text" :sound="sound" />
     </div>
