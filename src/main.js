@@ -13,7 +13,7 @@ if ('serviceWorker' in navigator && process.env.NODE_ENV === 'production') {
     navigator.serviceWorker
       .register('sw.js')
       .then(r => {
-        // console.log(r);
+        console.log('service worker registered in scope: ', r.scope);
       })
       .catch(e => console.log('SW error: ', e));
   });
