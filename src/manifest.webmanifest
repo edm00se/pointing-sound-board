@@ -7,7 +7,7 @@
   "background_color": "#fff",
   "icons": [
     {
-      "src": "assets/icons/logo_144.png",
+      "src": "assets/icons/apple-touch-icon-144x144.png",
       "sizes": "144x144",
       "type": "image/png"
     },
