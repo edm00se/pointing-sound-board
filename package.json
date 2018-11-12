@@ -12,7 +12,8 @@
     "build:ci": "parcel build ./src/index.html --public-url . --log-level 2 && npm run build:sw",
     "build:sw": "rimraf dist/sw.js && workbox generateSW config/workbox-config.js",
     "test": "jest --config config/tests/jest.conf.js --coverage",
-    "test:watch": "jest --config config/tests/jest.conf.js --coverage --watch"
+    "test:watch": "jest --config config/tests/jest.conf.js --coverage --watch",
+    "now-build": "npm run build"
   },
   "dependencies": {
     "howler": "2.0.15",
