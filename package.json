@@ -51,25 +51,6 @@
     "not ie <= 10"
   ],
   "keywords": [],
-  "jest": {
-    "moduleFileExtensions": [
-      "js",
-      "json",
-      "vue"
-    ],
-    "transform": {
-      "^.+\\.js$": "<rootDir>/node_modules/babel-jest",
-      ".*\\.(vue)$": "<rootDir>/node_modules/vue-jest"
-    },
-    "testURL": "http://localhost",
-    "setupFiles": [
-      "config/jest.setup.js"
-    ],
-    "coveragePathIgnorePatterns": [
-      "/node_modules/",
-      "<rootDir>/src/App.vue"
-    ]
-  },
   "prettier": {
     "semi": true,
     "singleQuote": true
