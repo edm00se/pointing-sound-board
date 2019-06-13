@@ -37,7 +37,7 @@
     "rimraf": "^2.6.2",
     "vue-hot-reload-api": "2.3.1",
     "vue-jest": "3.0.0",
-    "vue-server-renderer": "^2.5.17",
+    "vue-server-renderer": "^2.6.10",
     "vue-template-compiler": "^2.5.17",
     "workbox-cli": "4.3.1"
   },
