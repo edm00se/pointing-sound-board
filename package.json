@@ -16,30 +16,32 @@
     "now-build": "npm run build"
   },
   "dependencies": {
-    "howler": "2.0.15",
-    "vue": "^2.5.2"
+    "howler": "2.1.2",
+    "vue": "^2.6.10"
   },
   "devDependencies": {
-    "@babel/core": "7.1.2",
-    "@vue/component-compiler-utils": "2.3.0",
-    "babel-jest": "^23.6.0",
-    "babel-loader": "8.0.4",
-    "babel-plugin-syntax-jsx": "6.18.0",
-    "babel-plugin-transform-es2015-modules-commonjs": "^6.26.2",
-    "babel-plugin-transform-vue-jsx": "^3.7.0",
-    "babel-preset-env": "1.7.0",
-    "jest": "^23.6.0",
+    "@babel/core": "^7.4.5",
+    "@babel/plugin-transform-modules-commonjs": "^7.4.4",
+    "@babel/preset-env": "^7.4.5",
+    "@vue/babel-helper-vue-jsx-merge-props": "^1.0.0",
+    "@vue/babel-plugin-transform-vue-jsx": "^1.0.0-beta.3",
+    "@vue/component-compiler-utils": "3.0.0",
+    "babel-core": "^7.0.0-bridge.0",
+    "babel-jest": "^24.8.0",
+    "babel-loader": "^8.0.6",
+    "husky": "^2.4.1",
+    "jest": "^24.8.0",
     "jest-serializer-vue": "^2.0.2",
-    "node-sass": "4.9.4",
-    "parcel-bundler": "1.10.3",
-    "parcel-plugin-static-files-copy": "1.2.4",
-    "prettier": "1.14.3",
-    "rimraf": "^2.6.2",
-    "vue-hot-reload-api": "2.3.1",
-    "vue-jest": "3.0.0",
+    "lint-staged": "^8.2.1",
+    "parcel-bundler": "^1.12.3",
+    "prettier": "^1.17.0",
+    "rimraf": "^2.6.3",
+    "sass": "^1.21.0",
+    "vue-hot-reload-api": "^2.3.3",
+    "vue-jest": "^3.0.4",
     "vue-server-renderer": "^2.6.10",
-    "vue-template-compiler": "^2.5.17",
-    "workbox-cli": "4.3.1"
+    "vue-template-compiler": "^2.6.10",
+    "workbox-cli": "^4.3.1"
   },
   "engines": {
     "node": ">= 6.0.0",
@@ -55,5 +57,17 @@
     "semi": true,
     "singleQuote": true
   },
-  "staticPath": "static"
+  "staticPath": "static",
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged",
+      "pre-push": ""
+    }
+  },
+  "lint-staged": {
+    "*.{js,json,vue}": [
+      "prettier --write",
+      "git add"
+    ]
+  }
 }
