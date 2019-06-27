@@ -16,7 +16,6 @@
     "now-build": "npm run build"
   },
   "dependencies": {
-    "howler": "2.1.2",
     "vue": "^2.6.10"
   },
   "devDependencies": {
