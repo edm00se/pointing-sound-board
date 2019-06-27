@@ -6,11 +6,11 @@
     @mouseenter="updateHoverState(true)"
     @mouseleave="updateHoverState(false)">
     {{ text }}
+    <audio v-bind:src="soundPath"></audio>
   </div>
 </template>
 
 <script>
-import { Howl } from 'howler';
 const isProd = process.env.NODE_ENV === 'production';
 
 export default {
@@ -27,6 +27,9 @@ export default {
     },
     isActive() {
       return this.hoverState;
+    },
+    soundPath() {
+      return `${isProd ? '.' : '..'}/clips/${this.sound.path}`;
     }
   },
   data() {
@@ -39,10 +42,16 @@ export default {
       this.hoverState = isHover;
     },
     playAudio() {
-      const sound = new Howl({
-        src: [`${isProd ? '.' : '..'}/clips/${this.sound.path}`]
-      });
+      let sound = this.$el.querySelector('audio');
+      this.haltOtherAudio();
+      sound.currentTime = 0;
       sound.play();
+    },
+    haltOtherAudio() {
+      [...document.querySelectorAll('audio')].forEach(el => {
+        el.pause();
+        el.currentTime = 0;
+      });
     }
   },
   props: ['sound']
@@ -69,5 +78,8 @@ export default {
 }
 .active {
   filter: brightness(175%);
+}
+audio {
+  display: none;
 }
 </style>
