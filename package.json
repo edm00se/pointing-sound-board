@@ -36,7 +36,7 @@
     "parcel-plugin-static-files-copy": "^2.3.1",
     "prettier": "1.19.1",
     "rimraf": "^3.0.1",
-    "sass": "^1.25.0",
+    "sass": "^1.26.2",
     "vue-hot-reload-api": "^2.3.4",
     "vue-jest": "^3.0.5",
     "vue-server-renderer": "^2.6.11",
