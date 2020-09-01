@@ -33,7 +33,7 @@
     "jest-serializer-vue": "^2.0.2",
     "lint-staged": "^10.2.11",
     "parcel-bundler": "^1.12.4",
-    "parcel-plugin-static-files-copy": "^2.4.3",
+    "parcel-plugin-static-files-copy": "^2.5.0",
     "prettier": "^2.0.5",
     "rimraf": "^3.0.2",
     "sass": "^1.26.10",
