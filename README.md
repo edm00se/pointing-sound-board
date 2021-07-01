@@ -1,7 +1,7 @@
 <center>
 <h1>Pointing Sound Board</h1>
-  <a href="https://travis-ci.org/edm00se/pointing-sound-board">
-    <img alt="build status" src="https://travis-ci.org/edm00se/pointing-sound-board.svg?branch=master">
+  <a href="https://vercel.com/edm00se/pointing-sound-board">
+    <img alt="build status" src="https://img.shields.io/github/deployments/edm00se/pointing-sound-board/production?label=build">
   </a>
 </center>
 
