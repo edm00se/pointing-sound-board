@@ -22,7 +22,7 @@
   "devDependencies": {
     "@babel/core": "^7.16.7",
     "@babel/helper-regex": "^7.10.5",
-    "@babel/plugin-transform-modules-commonjs": "^7.15.0",
+    "@babel/plugin-transform-modules-commonjs": "^7.16.7",
     "@babel/preset-env": "^7.16.4",
     "@vue/babel-helper-vue-jsx-merge-props": "^1.2.1",
     "@vue/babel-plugin-transform-vue-jsx": "^1.2.1",
