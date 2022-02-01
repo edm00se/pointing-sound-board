@@ -1,0 +1,20 @@
+{
+  "name": "Pointing Sound Board",
+  "short_name": "Point Board",
+  "start_url": "./?utm_source=web_app_manifest",
+  "display": "standalone",
+  "theme_color": "#d07922",
+  "background_color": "#fff",
+  "icons": [
+    {
+      "src": "assets/icons/apple-touch-icon-144x144.png",
+      "sizes": "144x144",
+      "type": "image/png"
+    },
+    {
+      "src": "assets/icons/logo_512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
