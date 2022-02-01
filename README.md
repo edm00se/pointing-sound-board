@@ -13,14 +13,14 @@ https://codesandbox.io/s/github/edm00se/pointing-sound-board
 ## Installation
 
 - `git clone `
-- `cd vue-parcel-starter`
+- `cd pointing-sound-board`
 - `npm install`
 
 ## Usage
 
 - `npm run dev` gives you a development server with hot reloading
 - `npm run build` creates a production ready build
-- `npm test` runs test suites
+- ~`npm test` runs test suites~
 
 ## History
 
@@ -37,14 +37,12 @@ Inspired from a raucous round of pointing poker which seemed to need a bit of a 
 ## Credits
 
 - [vue.js][vue]
-- [parcel][parcel]
-- [edm00se/vue-parcel-starter][vue-parcel-starter]
+- [vite][vite]
 
 # License
 
 MIT
 
 [vue]: https://vuejs.org/
-[parcel]: https://parceljs.org/
-[vue-parcel-starter]: https://github.com/edm00se/vue-parcel-starter
+[vite]: https://vitejs.dev/
 [codesandbox-link]: https://codesandbox.io/s/github/edm00se/pointing-sound-board

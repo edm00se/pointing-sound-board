@@ -1,5 +1,5 @@
 node_modules
-.cache
+.DS_Store
 dist
-config/tests/coverage
-coverage
+dist-ssr
+*.local
