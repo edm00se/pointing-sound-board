@@ -20,7 +20,7 @@
     "vue": "^2.6.14"
   },
   "devDependencies": {
-    "@babel/core": "^7.16.7",
+    "@babel/core": "^7.16.12",
     "@babel/helper-regex": "^7.10.5",
     "@babel/plugin-transform-modules-commonjs": "^7.16.7",
     "@babel/preset-env": "^7.16.7",
