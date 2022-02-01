@@ -1,3 +1,4 @@
+import { describe, it, expect } from 'vitest';
 import { randomColor, colorAr } from './util';
 
 const hexRegEx = /^#(\d|[A-F]){6}$/i;

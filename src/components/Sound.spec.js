@@ -1,10 +1,8 @@
-import Vue from 'vue';
-import Sound from './Sound';
+import { describe, it, expect, vi } from 'vitest';
+import { mount } from '@vue/test-utils';
+import Sound from './Sound.vue';
 
 describe('Sound', () => {
-  let CMP;
-  let vm;
-
   const sampleSound = {
     text: 'Discuss',
     path: 'talkAmongstYourselves.m4a',
@@ -12,31 +10,28 @@ describe('Sound', () => {
     color: '#3F88C5'
   };
 
-  beforeEach(() => {
-    CMP = Vue.extend(Sound);
-    vm = new CMP({
-      propsData: {
-        sound: sampleSound
-      }
-    }).$mount(); // Instances and mounts the component
+  const vm = mount(Sound, {
+    props: {
+      sound: sampleSound
+    }
   });
 
-  it('renders props when passed', () => {
+  it('renders props when passed', async () => {
     expect(vm.sound.text).toBe('Discuss');
   });
 
-  it('provides sound data', () => {
+  it('provides sound data', async () => {
     expect(vm.sound.path).toBe(sampleSound.path);
   });
 
-  it('provides a different background on hover', () => {
+  it('provides a different background on hover', async () => {
     vm.updateHoverState(true);
     expect(vm.isActive).toBe(true);
   });
 
-  it('provides a playable interface', () => {
+  it('provides a playable interface', async () => {
     // would prefer to use the Howl function with spy, but not working out currently
-    const spy = jest.spyOn(vm, 'playAudio');
+    const spy = vi.spyOn(vm, 'playAudio');
     vm.playAudio();
     expect(spy).toHaveBeenCalled();
     expect(spy).toHaveBeenCalledTimes(1);
