@@ -3,7 +3,7 @@
   "name": "pointing-sound-board",
   "public": true,
   "builds": [
-    { "src": "package.json", "use": "@now/static-build" }
+    { "src": "package.json", "use": "@vercel/static-build" }
   ],
   "github": {
     "silent": true
