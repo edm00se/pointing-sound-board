@@ -4,6 +4,8 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
+    "build:ci": "npm run build && npm run build:sw",
+    "build:sw": "rimraf dist/sw.js && workbox generateSW config/workbox-config.js",
     "preview": "vite preview",
     "format": "prettier --write \"src/**/*.{vue,js,json}\"",
     "clean": "rimraf dist",
@@ -23,7 +25,8 @@
     "rimraf": "^3.0.2",
     "sass": "^1.49.7",
     "vite": "^2.7.2",
-    "vitest": "^0.2.5"
+    "vitest": "^0.2.5",
+    "workbox-cli": "^6.4.2"
   },
   "prettier": {
     "semi": true,
