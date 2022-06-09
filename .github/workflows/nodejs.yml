@@ -9,10 +9,11 @@ jobs:
 
     steps:
     - uses: actions/checkout@master
-    - name: Use Node.js 12.x (LTS)
-      uses: actions/setup-node@v1
+    - name: Use Node.js 16.x (LTS)
+      uses: actions/setup-node@v3
       with:
-        node-version: 12.x
+        node-version: 16
+        cache: 'npm'
     - name: npm install, build, and test
       run: |
         npm ci
