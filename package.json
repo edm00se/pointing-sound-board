@@ -8,7 +8,7 @@
     "build:sw": "rimraf dist/sw.js && workbox generateSW config/workbox-config.js",
     "preview": "vite preview",
     "format": "prettier --write \"src/**/*.{vue,js,json}\"",
-    "clean": "rimraf dist",
+    "clean": "rimraf dist coverage",
     "test": "vitest",
     "test:coverage": "vitest run --coverage"
   },
