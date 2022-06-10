@@ -8,7 +8,7 @@
 </template>
 
 <script>
-import Sound from './Sound';
+import Sound from './Sound.vue';
 import SoundAr from '../assets/sounds.json';
 import { randomColor } from '../util';
 

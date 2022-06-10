@@ -1,19 +1,12 @@
+<script setup>
+  import SoundList from './components/SoundList.vue'
+</script>
+
 <template>
   <div id="main">
     <SoundList />
   </div>
 </template>
-
-<script>
-import SoundList from './components/SoundList';
-
-export default {
-  name: 'App',
-  components: {
-    SoundList
-  }
-};
-</script>
 
 <style>
 #main {

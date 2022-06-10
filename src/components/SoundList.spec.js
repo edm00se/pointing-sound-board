@@ -1,34 +1,34 @@
-import Vue from 'vue';
-import SoundList from './SoundList';
+import { describe, it, expect, vi } from 'vitest';
+import { mount } from '@vue/test-utils';
+import SoundList from './SoundList.vue';
+import Sound from './Sound.vue';
+import SoundAr from '../assets/sounds.json';
 
-// create sample array, forcing coverage
-jest.mock('../assets/sounds.json', () => {
-  return [
-    {
-      text: 'Consensus',
-      path: 'consensus.m4a',
-      mime: 'audio/mp4',
-      color: null
-    },
-    {
-      text: 'Discuss',
-      path: 'talkAmongstYourselves.m4a',
-      mime: 'audio/mp4',
-      color: '#3F88C5'
-    }
-  ];
-});
+// // create sample array, forcing coverage
+// const soundArMock = vi.mock('../assets/sounds.json', () => [
+//     {
+//       text: 'Consensus',
+//       path: 'consensus.m4a',
+//       mime: 'audio/mp4',
+//       color: null
+//     },
+//     {
+//       text: 'Discuss',
+//       path: 'talkAmongstYourselves.m4a',
+//       mime: 'audio/mp4',
+//       color: '#3F88C5'
+//     }
+//   ]
+// );
 
 describe('SoundList', () => {
-  let CMP;
-  let vm;
-
-  beforeEach(() => {
-    CMP = Vue.extend(SoundList);
-    vm = new CMP({}).$mount(); // Instances and mounts the component
+  const wrapper = mount(SoundList, {
+    props: {},
   });
 
   it('constructs soundList accordingly', () => {
-    expect(vm.soundList.length).toBe(2);
+    expect(wrapper).toBeTruthy();
+    const soundList = wrapper.findAllComponents(Sound);
+    expect(soundList).toHaveLength(SoundAr.length);
   });
 });
