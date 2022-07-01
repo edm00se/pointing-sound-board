@@ -20,7 +20,7 @@
     "@vue/test-utils": "^2.0.0",
     "c8": "^7.11.3",
     "esbuild": "^0.14.18",
-    "jsdom": "^19.0.0",
+    "jsdom": "^20.0.0",
     "lint-staged": "^12.3.3",
     "prettier": "^2.5.1",
     "rimraf": "^3.0.2",
