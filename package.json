@@ -16,7 +16,7 @@
     "vue": "^3.2.25"
   },
   "devDependencies": {
-    "@vitejs/plugin-vue": "^2.3.3",
+    "@vitejs/plugin-vue": "^2.3.4",
     "@vue/test-utils": "^2.0.2",
     "c8": "^7.12.0",
     "esbuild": "^0.14.51",
