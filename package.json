@@ -24,7 +24,7 @@
     "lint-staged": "^13.0.3",
     "prettier": "^2.7.1",
     "rimraf": "^3.0.2",
-    "sass": "^1.55.0",
+    "sass": "^1.56.1",
     "vite": "^2.9.13",
     "vitest": "^0.24.4",
     "workbox-cli": "^6.5.4"
