@@ -13,20 +13,20 @@
     "test:coverage": "vitest run --coverage"
   },
   "dependencies": {
-    "vue": "^3.2.41"
+    "vue": "^3.2.45"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^2.3.4",
-    "@vue/test-utils": "^2.2.1",
+    "@vue/test-utils": "^2.2.4",
     "c8": "^7.12.0",
-    "esbuild": "^0.15.12",
-    "jsdom": "^20.0.2",
-    "lint-staged": "^13.0.3",
-    "prettier": "^2.7.1",
+    "esbuild": "^0.15.16",
+    "jsdom": "^20.0.3",
+    "lint-staged": "^13.0.4",
+    "prettier": "^2.8.0",
     "rimraf": "^3.0.2",
-    "sass": "^1.55.0",
+    "sass": "^1.56.1",
     "vite": "^2.9.13",
-    "vitest": "^0.24.4",
+    "vitest": "^0.25.3",
     "workbox-cli": "^6.5.4"
   },
   "prettier": {
