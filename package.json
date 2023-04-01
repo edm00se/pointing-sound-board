@@ -16,7 +16,7 @@
     "vue": "^3.2.47"
   },
   "devDependencies": {
-    "@vitejs/plugin-vue": "^4.0.0",
+    "@vitejs/plugin-vue": "^4.1.0",
     "@vitest/coverage-c8": "^0.28.4",
     "@vue/test-utils": "^2.2.10",
     "c8": "^7.12.0",
