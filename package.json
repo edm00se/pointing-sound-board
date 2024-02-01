@@ -19,7 +19,7 @@
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^4.6.2",
-    "@vitest/coverage-v8": "^1.1.1",
+    "@vitest/coverage-v8": "^1.2.2",
     "@vue/test-utils": "^2.4.3",
     "esbuild": "^0.19.11",
     "jsdom": "^23.0.1",
