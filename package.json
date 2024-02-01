@@ -20,7 +20,7 @@
   "devDependencies": {
     "@vitejs/plugin-vue": "^4.6.2",
     "@vitest/coverage-v8": "^1.1.1",
-    "@vue/test-utils": "^2.4.3",
+    "@vue/test-utils": "^2.4.4",
     "esbuild": "^0.19.11",
     "jsdom": "^23.0.1",
     "lint-staged": "^15.2.0",
