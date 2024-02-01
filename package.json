@@ -23,7 +23,7 @@
     "@vue/test-utils": "^2.4.3",
     "esbuild": "^0.19.11",
     "jsdom": "^23.0.1",
-    "lint-staged": "^15.2.0",
+    "lint-staged": "^15.2.1",
     "prettier": "^3.1.1",
     "rimraf": "^5.0.5",
     "sass": "^1.69.6",
