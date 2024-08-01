@@ -22,7 +22,7 @@
     "@vitest/coverage-v8": "^1.6.0",
     "@vue/test-utils": "^2.4.6",
     "esbuild": "^0.23.0",
-    "jsdom": "^24.1.0",
+    "jsdom": "^24.1.1",
     "lint-staged": "^15.2.7",
     "prettier": "^3.3.2",
     "rimraf": "^5.0.7",
