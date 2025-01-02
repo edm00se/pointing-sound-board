@@ -9,10 +9,10 @@ jobs:
 
     steps:
     - uses: actions/checkout@master
-    - name: Use Node.js 20.x (LTS)
+    - name: Use Node.js 22.x (LTS)
       uses: actions/setup-node@v4
       with:
-        node-version: 20
+        node-version: 22
         cache: 'npm'
     - name: npm install, build, and test
       run: |
