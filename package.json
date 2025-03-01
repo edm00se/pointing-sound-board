@@ -14,7 +14,7 @@
   },
   "dependencies": {
     "postcss": "^8.5.1",
-    "tough-cookie": "^5.1.0",
+    "tough-cookie": "^5.1.2",
     "vue": "^3.3.4"
   },
   "devDependencies": {
