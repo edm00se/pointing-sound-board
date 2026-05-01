@@ -15,7 +15,7 @@
   "dependencies": {
     "postcss": "^8.5.8",
     "tough-cookie": "^6.0.1",
-    "vue": "^3.3.4"
+    "vue": "^3.5.33"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^6.0.5",
