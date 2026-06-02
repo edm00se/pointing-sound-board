@@ -28,7 +28,7 @@
     "rimraf": "^6.1.3",
     "sass": "^1.99.0",
     "vite": "^8.0.12",
-    "vitest": "^4.0.6",
+    "vitest": "^4.1.8",
     "workbox-cli": "^7.4.1"
   },
   "prettier": {
