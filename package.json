@@ -6,7 +6,7 @@
     "dev": "vite",
     "build": "vite build",
     "vercel-build": "npm run build && npm run build:sw",
-    "build:sw": "rimraf dist/sw.js && workbox generateSW config/workbox-config.js",
+    "build:sw": "rimraf dist/sw.js && workbox generateSW config/workbox-config.cjs",
     "preview": "vite preview",
     "format": "prettier --write \"src/**/*.{vue,js,json}\"",
     "clean": "rimraf dist coverage",
