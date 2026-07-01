@@ -14,7 +14,7 @@
     "test:coverage": "vitest run --coverage"
   },
   "dependencies": {
-    "postcss": "^8.5.15",
+    "postcss": "^8.5.16",
     "tough-cookie": "^6.0.1",
     "vue": "^3.3.4"
   },
