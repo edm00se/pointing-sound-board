@@ -14,7 +14,7 @@
     "test:coverage": "vitest run --coverage"
   },
   "dependencies": {
-    "postcss": "^8.5.15",
+    "postcss": "^8.5.16",
     "tough-cookie": "^6.0.1",
     "vue": "^3.3.4"
   },
@@ -24,11 +24,11 @@
     "@vue/test-utils": "^2.4.11",
     "esbuild": "^0.28.1",
     "jsdom": "^29.1.1",
-    "lint-staged": "^17.0.7",
-    "prettier": "^3.8.4",
+    "lint-staged": "^17.0.8",
+    "prettier": "^3.9.4",
     "rimraf": "^6.1.3",
     "sass": "^1.101.0",
-    "vite": "^8.0.16",
+    "vite": "^8.1.3",
     "vitest": "^4.0.6",
     "workbox-cli": "^7.4.1"
   },
